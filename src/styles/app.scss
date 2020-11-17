@@ -12,9 +12,15 @@
 // @import "./components/04\ contact.scss";
 // @import "./components/05\ footer.scss";
 // @import "./components/06\ media\ queries.scss";
+* {
+  cursor: none;
+}
 
 body,
 html {
   visibility: hidden;
   background-color: $black;
+  cursor: none;
+  height: 100vh;
+  width: 100vw;
 }

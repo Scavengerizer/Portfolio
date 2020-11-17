@@ -1,21 +1,23 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-body{ 
+body {
   overflow-x: hidden;
   font-family: inherit;
 }
-img{
+img {
   max-width: 100%;
 }
-button{
+button {
   font-family: inherit;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
-} 
+}

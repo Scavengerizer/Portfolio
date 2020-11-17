@@ -1,0 +1,32 @@
+header {
+  height: 10vh;
+  width: 100vw;
+  background-color: aqua;
+}
+.cursor {
+  z-index: 1000;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid grey;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.09s ease;
+  position: fixed;
+  transform-origin: 100% 100%;
+  transition-property: unset;
+}
+.cursor-follower {
+  z-index: 1000;
+  width: 4px;
+  height: 4px;
+  border: 3px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition-property: background, border, transform;
+  position: fixed;
+  transform-origin: "100% 100%";
+}

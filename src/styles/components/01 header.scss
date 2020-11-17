@@ -1,0 +1,43 @@
+header {
+  min-height: 300px;
+  .header_contents {
+    .logo {
+      margin-top: 2em;
+      span {
+        font-size: 6rem;
+        color: $darkgrey;
+        font-family: $Pop;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+    .nav-links {
+      margin-top: 1.5em;
+      .link {
+        color: $darkgrey;
+        font-family: $Pop;
+        font-weight: 400;
+        margin: 0 5em;
+        transition: 0.3s;
+
+        &::after {
+          content: "";
+          margin-top: 0.5em;
+          display: block;
+          background: $red;
+          width: 0;
+          height: 3px;
+          transition: width 0.5s;
+        }
+        &:hover::after {
+          width: 100%;
+          transition: width 0.5s;
+        }
+        &:hover {
+          margin-top: 2px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

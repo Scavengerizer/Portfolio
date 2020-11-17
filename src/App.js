@@ -1,0 +1,71 @@
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/01 header";
+import Home from "./components/02 home";
+import Work from "./components/03 work";
+import Contact from "./components/04 contact";
+import Footer from "./components/05 footer";
+
+import "./styles/app.scss";
+
+function App() {
+  useEffect(() => {
+    // prevent flashing
+    gsap.to("body", { duration: 0, css: { visibility: "visible" } });
+
+    // overlay animation
+    let tl1 = gsap.timeline();
+    tl1
+      .to(".text-show", {
+        ease: "power1.out",
+        y: "0%",
+        duration: 1.2,
+        stagger: 0.25,
+      })
+      .to(".slider", {
+        ease: "power1.out",
+        y: "-1000%",
+        skewY: 2,
+        delay: 1.5,
+        duration: 3.4,
+      })
+      .to(
+        ".overlay",
+
+        {
+          ease: "power1.out",
+
+          y: "-110%",
+          duration: 1.5,
+          skewY: 2,
+        },
+        "-=3.3"
+      );
+  }, []);
+
+  return (
+    <Router>
+      <div className='App'>
+        <Header />
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+            <Work />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route path='/work' exact>
+            <Work />
+          </Route>
+          <Route path='/contact' exact>
+            <Contact />
+            <Footer />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;

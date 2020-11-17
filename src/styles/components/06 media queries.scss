@@ -1,0 +1,470 @@
+//1368px
+@media (max-width: $surfacepro) {
+  header {
+    .header_contents {
+      .logo {
+        span {
+          font-size: 5rem;
+        }
+      }
+      .nav-links {
+        .link {
+          margin: 0 4.5em;
+        }
+      }
+    }
+  }
+  .home {
+    .home_contents {
+      justify-content: center;
+      margin-right: 1em;
+      .home_pics {
+        display: none;
+      }
+    }
+    .home_message {
+      display: none;
+    }
+  }
+  .work {
+    .fixed_block {
+      display: none;
+    }
+    .work_contents {
+      .work_samples {
+        .sample {
+          .date_of_pic {
+            margin-left: 0;
+            font-size: 1rem;
+          }
+          .work_grid {
+            margin-left: 6em;
+          }
+          .work_grid_1 {
+            .pic_number {
+              font-size: 1.75rem;
+            }
+            .pic_heading {
+              font-size: 7rem;
+            }
+          }
+          .work_grid_2 {
+            p {
+              font-size: 1.25rem;
+            }
+          }
+          .work_grid_3 {
+            margin-left: 2em;
+            .pic_image {
+              min-width: 300px;
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+    .work_message {
+      display: none;
+    }
+  }
+  .contact {
+    .contact_sections {
+      .contact_section1 {
+        span {
+          font-size: 7.5rem;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+      }
+      .contact_section2 {
+        .red_line {
+          width: 18rem;
+        }
+        .contact_buttons {
+          button {
+            width: 15rem;
+            font-size: 1rem;
+          }
+          button:hover {
+            width: 16rem;
+          }
+        }
+      }
+      .contact_section3 {
+        form {
+          .input_field {
+            padding: 0.85em 2em;
+          }
+          ::placeholder {
+            font-size: 1rem;
+          }
+          .checkbox {
+            .label_text {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 1000px
+@media (max-width: 1000px) {
+  .work {
+    .work_contents {
+      .work_samples {
+        .sample {
+          margin-top: 3em;
+          margin-bottom: -10em;
+          .date_of_pic {
+            display: none;
+          }
+          .work_grid {
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+          }
+          .work_grid_1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .pic_heading {
+              margin: 0 auto;
+            }
+          }
+          .work_grid_2 {
+            grid-row: 3/4;
+            grid-column: 1/2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            p {
+              margin: 0 auto;
+              margin-top: 5em;
+              width: 50%;
+            }
+          }
+          .work_grid_3 {
+            grid-row: 2/3;
+            grid-column: 1/2;
+            margin: 0 auto;
+            .pic_image {
+              margin: 0 auto;
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .contact_sections {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      .contact_section1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        text-align: center;
+        p {
+          margin: 0 auto;
+        }
+      }
+      .contact_section2 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        margin: 0 auto;
+        margin-top: 7em;
+      }
+      .contact_section3 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin: 0 auto;
+        margin-top: -6em;
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          button {
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+  }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 2.75rem;
+      }
+    }
+  }
+}
+
+// 768px
+@media (max-width: $ipadmini) {
+  header {
+    .header_contents {
+      .logo {
+        span {
+          font-size: 3.5rem;
+        }
+      }
+      .nav-links {
+        .link {
+          display: inline-block;
+          margin: 0 2.7em;
+        }
+      }
+    }
+  }
+  .home {
+    .home_contents {
+      .home_text {
+        .home_title {
+          span {
+            font-size: 7rem;
+          }
+        }
+      }
+    }
+  }
+  .work {
+    .work_contents {
+      .work_samples {
+        .sample {
+          margin-bottom: 0em;
+
+          .work_grid_1 {
+            .pic_heading {
+              span {
+                font-size: 6rem;
+              }
+            }
+            .pic_number {
+              font-size: 1.5rem;
+            }
+          }
+          .work_grid_3 {
+            .pic_image {
+              width: 330px;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .col {
+      .footer_logo {
+        span {
+          font-size: 2rem;
+        }
+      }
+      .footer_links {
+        margin-left: 1.5em;
+        a {
+          padding: 0 3em;
+          font-size: 0.8rem;
+        }
+      }
+      .footer_policies {
+        a {
+          padding: 0 2em;
+          font-size: 0.6rem;
+        }
+      }
+      .footer_copyright {
+        span {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
+//600px
+@media (max-width: 600px) {
+  .contact {
+    max-width: 100%;
+    .contact_sections {
+      width: 100%;
+
+      .contact_section1 {
+        span {
+          font-size: 5.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      .contact_section2 {
+        margin-top: 4em;
+        .contact_section2_contents {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      .contact_section3 {
+        margin-top: -10em;
+        form {
+          .input_field {
+            padding: 0.65em 1.5em;
+            margin: 2em 0 0 0;
+          }
+          .input_name {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0;
+          }
+          .checkbox {
+            display: flex;
+            justify-content: center;
+            padding: 1em 0 3em 0;
+
+            .label_text {
+              margin-top: 3em;
+              width: 60%;
+              font-size: 0.9rem;
+            }
+          }
+          button {
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+  }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 1.75rem;
+        .hide span {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+// 414px
+@media (max-width: $iphone11promax) {
+  header {
+    .header_contents {
+      .logo {
+        span {
+          font-size: 2.5rem;
+        }
+      }
+      .nav-links {
+        .link {
+          font-size: 0.85rem;
+          margin: 0 1.75em;
+        }
+      }
+    }
+  }
+  .home {
+    .home_contents {
+      padding: 0em 0 5em 0;
+
+      .home_text {
+        .home_title {
+          span {
+            font-size: 6rem;
+          }
+        }
+        .home_hireme {
+          margin-top: 4em;
+        }
+      }
+    }
+  }
+  .work {
+    .work_contents {
+      .work_samples {
+        .sample {
+          margin-bottom: 7em;
+          .work_grid_1 {
+            .pic_heading {
+              span {
+                font-size: 5rem;
+              }
+            }
+            .pic_number {
+              font-size: 1.25rem;
+            }
+          }
+          .work_grid_2 {
+            p {
+              width: 70%;
+              font-size: 1rem;
+              line-height: 1.7;
+            }
+          }
+          .work_grid_3 {
+            .pic_image {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .contact_sections {
+      .contact_section1 {
+        span {
+          font-size: 5rem;
+        }
+      }
+
+      .contact_section3 {
+        margin-top: -10em;
+      }
+    }
+  }
+  footer {
+    .col {
+      .footer_links {
+        a {
+          padding: 0 2em;
+        }
+      }
+      .footer_policies {
+        a {
+          padding: 0 1em;
+        }
+      }
+    }
+  }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// 340px
+@media (max-width: 340px) {
+  .contact {
+    .contact_sections {
+      .contact_section3 {
+        margin-top: -5em;
+      }
+    }
+  }
+}

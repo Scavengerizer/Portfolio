@@ -1,7 +1,7 @@
 header {
-  height: 10vh;
-  width: 100vw;
-  background-color: aqua;
+  height: 100px;
+  width: 100%;
+  background-color: $white;
 }
 .cursor {
   z-index: 1000;
@@ -21,7 +21,7 @@ header {
   z-index: 1000;
   width: 4px;
   height: 4px;
-  border: 3px solid white;
+  border: 3px solid $dark-grey;
   border-radius: 50%;
   overflow: hidden;
   pointer-events: none;
@@ -29,4 +29,95 @@ header {
   transition-property: background, border, transform;
   position: fixed;
   transform-origin: "100% 100%";
+}
+.menu {
+  display: none;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  .menu-secondary-bg {
+    background-color: #e63946;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .menu-layer {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    .wrapper {
+      position: relative;
+      margin-left: 7em;
+      .menu-links {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        top: 150px;
+        nav {
+          display: block;
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+              h1 {
+                list-style: none;
+                font-size: 8rem;
+                font-weight: 600;
+                line-height: 0.8;
+                color: black;
+                letter-spacing: 2px;
+                font-family: "Montserrat";
+                -webkit-text-stroke-width: 1.2px;
+                -webkit-text-stroke-color: white;
+                margin-bottom: 0.4em;
+                transition: 0.4s;
+                &:hover {
+                  transition: 0.4s;
+                  color: #e63946;
+                  -webkit-text-stroke-width: 1.2px;
+                  -webkit-text-stroke-color: #e63946;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.hamburger {
+  z-index: 10;
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #e63946;
+    margin: 0.7em 0;
+    transition: 0.6s linear;
+  }
+  &:hover {
+    :nth-child(1) {
+      width: 40px;
+      transition: 0.6s linear;
+    }
+    :nth-child(2) {
+      width: 35px;
+      transition: 0.6s linear;
+    }
+  }
 }

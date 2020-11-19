@@ -126,44 +126,54 @@ function Header() {
       <div className='cursor-follower'></div>
 
       <header>
-        <div className='hamburger' onClick={handleMenu}>
-          <div className='line'></div>
-          <div className='line'></div>
-          <div className='line'></div>
+        <div className='container'>
+          <div className='col center'>
+            <div className='hamburger col center' onClick={handleMenu}>
+              <div className='line'></div>
+              <div className='line'></div>
+            </div>
+          </div>
         </div>
-        <div className='menu'>
+      </header>
+
+      <div className='menu'>
+        <div className='menu-secondary-bg'>
           <div className='menu-layer'>
             <div className='wrapper'>
               <div className='menu-links'>
                 <nav>
                   <ul>
-                    <li
-                      className='menu-list-item'
-                      onMouseEnter={(e) => hover1(e)}
-                      onMouseLeave={(e) => hover2(e)}
-                    >
-                      <h1>Home</h1>
+                    <li className='menu-list-item'>
+                      <h1
+                        onMouseEnter={(e) => hover1(e)}
+                        onMouseLeave={(e) => hover2(e)}
+                      >
+                        Home
+                      </h1>
                     </li>
-                    <li
-                      className='menu-list-item'
-                      onMouseEnter={(e) => hover1(e)}
-                      onMouseLeave={(e) => hover2(e)}
-                    >
-                      <h1>About Me</h1>
+                    <li className='menu-list-item'>
+                      <h1
+                        onMouseEnter={(e) => hover1(e)}
+                        onMouseLeave={(e) => hover2(e)}
+                      >
+                        About Me
+                      </h1>
                     </li>
-                    <li
-                      className='menu-list-item'
-                      onMouseEnter={(e) => hover1(e)}
-                      onMouseLeave={(e) => hover2(e)}
-                    >
-                      <h1>My Work</h1>
+                    <li className='menu-list-item'>
+                      <h1
+                        onMouseEnter={(e) => hover1(e)}
+                        onMouseLeave={(e) => hover2(e)}
+                      >
+                        My Work
+                      </h1>
                     </li>
-                    <li
-                      className='menu-list-item'
-                      onMouseEnter={(e) => hover1(e)}
-                      onMouseLeave={(e) => hover2(e)}
-                    >
-                      <h1>Experience</h1>
+                    <li className='menu-list-item'>
+                      <h1
+                        onMouseEnter={(e) => hover1(e)}
+                        onMouseLeave={(e) => hover2(e)}
+                      >
+                        Contact Me
+                      </h1>
                     </li>
                   </ul>
                 </nav>
@@ -171,7 +181,7 @@ function Header() {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </div>
   );
 }

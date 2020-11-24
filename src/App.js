@@ -3,7 +3,7 @@ import gsap from "gsap";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/01 header";
 import Home from "./components/02 home";
-// import Work from "./components/03 work";
+import About from "./components/03 about";
 // import Contact from "./components/04 contact";
 // import Footer from "./components/05 footer";
 
@@ -57,6 +57,7 @@ function App() {
     <div className='app'>
       <Header />
       <Home />
+      <About />
     </div>
   );
 }

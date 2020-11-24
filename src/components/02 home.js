@@ -16,9 +16,8 @@ function Home() {
               Front-end Developer.
             </p>
             <div className='btn'>
-              <a className='hello'>
-                <span></span>See my work
-              </a>
+              <a>See my work</a>
+              <div className='test'></div>
             </div>
           </div>
           <div className='home-pic'>

@@ -1,9 +1,12 @@
 .home {
   width: 100%;
   min-height: 80vh;
-  margin: 3em 0;
+  margin: 4em 0;
   .home-content {
     justify-content: space-between;
+  }
+  .home-pic {
+    margin-right: 2em;
   }
   .home-text {
     // width: 100%;
@@ -24,7 +27,7 @@
       font-size: 11.25rem;
       font-weight: 700;
       color: $blue;
-      letter-spacing: 5%;
+      letter-spacing: 2px;
       font-family: $M;
       margin: 0.1em 0;
     }
@@ -54,13 +57,15 @@
         font-family: $M;
         background-color: $blue;
         border: none;
+        z-index: 2;
       }
 
-      .test {
+      .bg {
         display: block;
         width: 16rem;
         height: 4.5rem;
         background-color: $yellow;
+        opacity: 0.7;
       }
     }
   }

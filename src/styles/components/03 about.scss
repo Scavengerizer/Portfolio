@@ -1,0 +1,76 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  margin: 10em 0;
+  .container {
+    .row {
+      justify-content: space-between;
+      .about-pic {
+        // background: aqua;
+        margin-right: 5em;
+        min-width: 300px;
+      }
+      .about-text {
+        display: block;
+        margin-left: 2em;
+        // background: aqua;
+
+        h1 {
+          position: relative;
+          font: 700 7.5rem $M;
+          // letter-spacing: 3px;
+          color: $blue;
+          display: inline-block;
+        }
+        h1::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 90%;
+          height: 50%;
+          background-color: $yellow;
+          z-index: -1;
+          top: 55%;
+          left: -5%;
+          opacity: 0.6;
+        }
+        p {
+          margin: 4em 0;
+          letter-spacing: 3px;
+          // max-width: 50%;
+          // min-width: 50%;
+          font: 400 1.875rem $S;
+          line-height: 1.6;
+          color: $dark-grey;
+        }
+        .btn {
+          margin-left: 1.5em;
+          display: inline-block;
+
+          a {
+            position: relative;
+            width: 18rem;
+            height: 4.5rem;
+            padding: 0.5em 0.75em;
+            color: $white;
+            top: 42px;
+            left: -15px;
+            font-size: 2rem;
+            font-family: $M;
+            background-color: $blue;
+            border: none;
+            z-index: 2;
+          }
+
+          .bg {
+            display: block;
+            width: 18.7rem;
+            height: 4.5rem;
+            background-color: $yellow;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

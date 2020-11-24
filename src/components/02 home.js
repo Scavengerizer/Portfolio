@@ -1,50 +1,32 @@
 import React from "react";
-import img1 from "../assets/images/1.png";
+import landing_image from "../assets/svg/limage.svg";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div className='home'>
       <div className='container'>
-        <div className='home_contents row'>
-          <div className='home_text col h-center'>
-            <div className='home_title col'>
-              <span>Simple</span>
-              <span>and</span>
-              <span>Unique</span>
+        <div className='row home-content'>
+          <div className='home-text'>
+            <h2>I can</h2>
+            <br></br>
+            <h1>Design</h1>
+            <p>
+              Hi, I am Himanshu Goel. I am a UI/UX<br></br> Designer and a
+              Front-end Developer.
+            </p>
+            <div className='btn'>
+              <a className='hello'>
+                <span></span>See my work
+              </a>
             </div>
-            <div className='home_hireme'>
-              <Link to='#' className='stylish' data-text='Hire Us'>
-                Hire Us
-              </Link>
-            </div>
           </div>
-          <div className='home_pics'>
-            <img src={img1} alt='' />
+          <div className='home-pic'>
+            <img src={landing_image} alt='' />
           </div>
         </div>
-        <div className='home_message'>
-          <p>
-            We make photography look<br></br>
-            effortless and stunning
-          </p>
-        </div>
+        <div className='scroll-anim'></div>
       </div>
-
-      <div className='overlay'>
-        <div className='overlay-text'>
-          <div className='hide'>
-            <span className='text-show'>A great space for all the</span>
-          </div>
-          <div className='hide'>
-            <span className='text-show'>photographers looking to</span>
-          </div>
-          <div className='hide'>
-            <span className='text-show'>showcase their work</span>
-          </div>
-        </div>
-      </div>
-      <div className='slider'></div>
     </div>
   );
 }

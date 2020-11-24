@@ -56,7 +56,7 @@ header {
     position: relative;
     height: 100%;
     overflow: hidden;
-    background-color: $second-bg;
+    background-color: #3f3d56;
     .wrapper {
       position: relative;
       margin-left: 7em;
@@ -79,19 +79,19 @@ header {
                 font-size: 8rem;
                 font-weight: 600;
                 line-height: 0.8;
-                color: $second-bg;
+                color: #3f3d56;
                 letter-spacing: 2px;
-                font-family: "Montserrat";
+                font-family: $M;
                 -webkit-text-stroke-width: 1.2px;
-                -webkit-text-stroke-color: $dark-grey;
+                -webkit-text-stroke-color: $yellow;
                 margin-bottom: 0.4em;
                 transition: 0.4s;
               }
               h1:hover {
                 transition: 0.4s;
-                color: $blue;
+                color: $yellow;
                 -webkit-text-stroke-width: 1.2px;
-                -webkit-text-stroke-color: $blue;
+                -webkit-text-stroke-color: $yellow;
                 &::after {
                   position: absolute;
                   content: "";
@@ -99,7 +99,7 @@ header {
                   margin-left: 0.5em;
                   left: 100%;
                   top: 50%;
-                  background: $yellow;
+                  background: $blue;
                   width: 20rem;
                   height: 3px;
                   transition: width 0.5s;

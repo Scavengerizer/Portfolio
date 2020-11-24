@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/01 header";
-// import Home from "./components/02 home";
+import Home from "./components/02 home";
 // import Work from "./components/03 work";
 // import Contact from "./components/04 contact";
 // import Footer from "./components/05 footer";
@@ -56,6 +56,7 @@ function App() {
   return (
     <div className='app'>
       <Header />
+      <Home />
     </div>
   );
 }

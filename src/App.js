@@ -4,7 +4,7 @@ import gsap from "gsap";
 import Header from "./components/01 header";
 import Home from "./components/02 home";
 import About from "./components/03 about";
-// import Contact from "./components/04 contact";
+import Work from "./components/04 work";
 // import Footer from "./components/05 footer";
 
 import "./styles/app.scss";
@@ -58,6 +58,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Work />
     </div>
   );
 }

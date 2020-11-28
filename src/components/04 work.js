@@ -73,11 +73,11 @@ function Work() {
               </div>
 
               <div className='case-text'>
-                <h4>The Design</h4>
+                <h4>The Code</h4>
                 <p>
-                  Each website is uniquely<br></br> crafted with appealing
-                  colour<br></br> combination and sleek and<br></br> catchy
-                  design.
+                  The design is coded into a<br></br> responsive website, loaded
+                  <br></br> with subtle animations, having<br></br> a clean code
+                  architecture.
                 </p>
               </div>
             </div>

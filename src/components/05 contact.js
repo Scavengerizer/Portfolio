@@ -13,7 +13,7 @@ function Contact() {
           <div className='contact-heading'>
             <h1>Contact Me</h1>
           </div>
-          <div className='row'>
+          <div className='contact-contents row'>
             <div className='contact-text'>
               <h3>Have a project idea in mind ? </h3>
               <h5>Let’s get started</h5>

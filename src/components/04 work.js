@@ -35,8 +35,16 @@ function Work() {
       vertical: true,
       horizontal: false,
     });
-    new Rellax(".case-text", {
+    new Rellax(".text2", {
       speed: 4,
+      center: true,
+      wrapper: null,
+      round: true,
+      vertical: true,
+      horizontal: false,
+    });
+    new Rellax(".text1", {
+      speed: -1,
       center: true,
       wrapper: null,
       round: true,
@@ -72,7 +80,7 @@ function Work() {
                 </div>
               </div>
 
-              <div className='case-text'>
+              <div className='case-text text1'>
                 <h4>The Code</h4>
                 <p>
                   The design is coded into a<br></br> responsive website, loaded
@@ -82,7 +90,7 @@ function Work() {
               </div>
             </div>
             <div className='case-section1'>
-              <div className='case-text'>
+              <div className='case-text text2'>
                 <h4>The Design</h4>
                 <p>
                   Each website is uniquely<br></br> crafted with appealing

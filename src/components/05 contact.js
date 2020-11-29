@@ -1,5 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import email from "../assets/svg/email.svg";
+import behance from "../assets/svg/behance.svg";
+import linkedin from "../assets/svg/linkedin.svg";
+import github from "../assets/svg/github.svg";
+import contact_image from "../assets/images/contact.png";
 
 function Contact() {
   return (
@@ -16,13 +20,39 @@ function Contact() {
               <div className='links'>
                 <div className='link'>
                   <div className='row'>
-                    <img src='' alt='' />
+                    <img src={email} alt='' />
                     <a href='#'>Email</a>
+                  </div>
+                </div>
+                <div className='link'>
+                  <div className='row'>
+                    <img src={behance} alt='' />
+                    <a href='#'>Behance</a>
+                  </div>
+                </div>
+                <div className='link'>
+                  <div className='row'>
+                    <img src={linkedin} alt='' />
+                    <a href='#'>Linkedin</a>
+                  </div>
+                </div>
+                <div className='link'>
+                  <div className='row'>
+                    <img src={github} alt='' />
+                    <a href='#'>Github</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='contact-image'></div>
+            <div className='contact-image'>
+              <img src={contact_image} alt='' />
+            </div>
+          </div>
+          <div className='resume'>
+            <div className='btn'>
+              <a>My Resume</a>
+              <div className='bg'></div>
+            </div>
           </div>
         </div>
       </div>

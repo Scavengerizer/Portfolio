@@ -50,7 +50,9 @@ function Contact() {
           </div>
           <div className='resume'>
             <div className='btn'>
-              <a>My Resume</a>
+              <a href='https://drive.google.com/file/d/1Ph9EEcVAdz_x4dmdnqAXL5XhOqy-hYU0/view?usp=sharing'>
+                My Resume
+              </a>
               <div className='bg'></div>
             </div>
           </div>

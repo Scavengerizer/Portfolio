@@ -15,14 +15,14 @@ function App() {
     // prevent flashing
     gsap.to("body", { duration: 0, css: { visibility: "visible" } });
 
-    document.addEventListener("mousemove", (e) => {
-      const cursor = document.querySelector(".cursor");
-      const cursorFollower = document.querySelector(".cursor-follower");
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-      cursorFollower.style.left = `${e.clientX}px`;
-      cursorFollower.style.top = `${e.clientY}px`;
-    });
+    // document.addEventListener("mousemove", (e) => {
+    //   const cursor = document.querySelector(".cursor");
+    //   const cursorFollower = document.querySelector(".cursor-follower");
+    //   cursor.style.left = `${e.clientX}px`;
+    //   cursor.style.top = `${e.clientY}px`;
+    //   cursorFollower.style.left = `${e.clientX}px`;
+    //   cursorFollower.style.top = `${e.clientY}px`;
+    // });
 
     // overlay animation
     // let tl1 = gsap.timeline();

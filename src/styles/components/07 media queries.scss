@@ -70,3 +70,153 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .contact {
+    .container {
+      .col {
+        .resume {
+          .btn {
+            a {
+              font-size: 1.5rem;
+              top: 32px;
+            }
+            .bg {
+              width: 11rem;
+              height: 3.5rem;
+            }
+          }
+        }
+        .contact-heading {
+          h1 {
+            font-size: 5rem;
+          }
+        }
+        .contact-contents {
+          .contact-text {
+            h3 {
+              // display: none;
+              font-size: 1.75rem;
+            }
+            h5 {
+              font-size: 1rem;
+            }
+            .links {
+              .link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .row {
+                  a {
+                    font-size: 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .home {
+    .btn-cont {
+      .btn {
+        a {
+          font-size: 1.5rem;
+          top: 32px;
+        }
+        .bg {
+          width: 12rem;
+          height: 3.5rem;
+        }
+      }
+    }
+    .container {
+      .row {
+        .home-text {
+          h2 {
+            font-size: 3rem;
+          }
+          h1 {
+            font-size: 8rem;
+          }
+          p {
+            font-size: 1.25rem;
+          }
+        }
+        // .home-text {
+        // }
+        .home-pic {
+          // margin: 0 auto;
+          max-width: 75%;
+          max-height: 75%;
+        }
+      }
+    }
+  }
+  .about {
+    .container {
+      h1 {
+        font-size: 5rem;
+      }
+      .row {
+        .about-pic {
+          margin: 0 auto;
+          margin-top: 7em;
+          width: 50%;
+          height: 50%;
+          min-width: 50px;
+        }
+        .about-text {
+          p {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+  .work {
+    .container {
+      .col {
+        .work-heading {
+          h1 {
+            font-size: 5rem;
+          }
+        }
+        .cases {
+          .case-text {
+            h4 {
+              font-size: 1rem;
+            }
+            p {
+              font-size: 1.5rem;
+            }
+          }
+          .case {
+            height: 650px;
+            width: 350px;
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .col {
+      .footer_links {
+        margin-left: 0em;
+        a {
+          font-size: 1.25rem;
+        }
+      }
+      .footer_pics {
+        img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}

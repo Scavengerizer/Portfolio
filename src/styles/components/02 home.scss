@@ -14,10 +14,11 @@
     h2 {
       display: inline-block;
       position: relative;
-      font-size: 4rem;
-      font-weight: 600;
+      font: 600 4rem $M;
+      // font-size: 4rem;
+      // font-weight: 600;
       color: $white;
-      font-family: $M;
+      // font-family: $M;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: $grey;
     }

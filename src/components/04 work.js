@@ -36,7 +36,7 @@ function Work() {
       horizontal: false,
     });
     new Rellax(".text2", {
-      speed: 4,
+      speed: 1,
       center: true,
       wrapper: null,
       round: true,

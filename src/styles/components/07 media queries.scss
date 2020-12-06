@@ -1,0 +1,72 @@
+@media (max-width: 1368px) {
+  .home {
+    .container {
+      .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // .home-text {
+        // }
+        .home-pic {
+          // margin: 0 auto;
+          margin-right: 0em;
+          margin-top: 5em;
+        }
+      }
+      .btn-cont {
+        margin-top: 7em;
+        text-align: center;
+      }
+    }
+  }
+  .about {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        .about-pic {
+          margin-top: 9em;
+          margin-right: 0em;
+        }
+        .about-text {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .work {
+    .container {
+      .cases {
+        // width: 0px;
+        // background-color: green;
+        flex-direction: column-reverse;
+        justify-content: center;
+        // justify-content: center;
+        align-items: center;
+      }
+      .case-section1 {
+        margin: 0;
+        // justify-content: center;
+        // align-items: center;
+      }
+    }
+  }
+  .contact {
+    .container {
+      .contact-contents {
+        .row {
+          justify-content: center;
+        }
+        .contact-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        .contact-image {
+          display: none;
+        }
+      }
+    }
+  }
+}

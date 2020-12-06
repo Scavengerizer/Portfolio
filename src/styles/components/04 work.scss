@@ -30,9 +30,10 @@
         }
       }
       .cases {
-        width: 1200px;
+        width: 100%;
+        // width: 1200px;
         margin: 0 auto;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         .case-text {
           h4 {
@@ -78,6 +79,7 @@
           }
         }
         .case-section1 {
+          margin-left: 0em;
           .case {
             .img2 {
               width: 100%;

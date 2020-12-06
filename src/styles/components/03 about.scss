@@ -4,6 +4,31 @@
   min-height: 100vh;
   margin-top: 12em;
   .container {
+    .about-h1 {
+      display: block;
+      margin-left: 2em;
+    }
+    h1 {
+      margin-top: 1em;
+      position: relative;
+      font: 700 7.5rem $M;
+      // letter-spacing: 3px;
+      color: $blue;
+      display: inline-block;
+      z-index: 2;
+    }
+    h1::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 90%;
+      height: 50%;
+      background-color: $yellow;
+      z-index: -1;
+      top: 55%;
+      left: -5%;
+      opacity: 0.6;
+    }
     .row {
       justify-content: space-between;
       .about-pic {
@@ -16,27 +41,6 @@
         margin-left: 2em;
         // background: aqua;
 
-        h1 {
-          margin-top: 1em;
-          position: relative;
-          font: 700 7.5rem $M;
-          // letter-spacing: 3px;
-          color: $blue;
-          display: inline-block;
-          z-index: 2;
-        }
-        h1::after {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 90%;
-          height: 50%;
-          background-color: $yellow;
-          z-index: -1;
-          top: 55%;
-          left: -5%;
-          opacity: 0.6;
-        }
         p {
           margin: 4em 0;
           letter-spacing: 3px;
@@ -46,33 +50,33 @@
           line-height: 1.6;
           color: $dark-grey;
         }
-        .btn {
-          margin-left: 1.5em;
-          display: inline-block;
+        // .btn {
+        //   margin-left: 1.5em;
+        //   display: inline-block;
 
-          a {
-            position: relative;
-            width: 18rem;
-            height: 4.5rem;
-            padding: 0.5em 0.75em;
-            color: $white;
-            top: 42px;
-            left: -15px;
-            font-size: 2rem;
-            font-family: $M;
-            background-color: $blue;
-            border: none;
-            z-index: 2;
-          }
+        //   a {
+        //     position: relative;
+        //     width: 18rem;
+        //     height: 4.5rem;
+        //     padding: 0.5em 0.75em;
+        //     color: $white;
+        //     top: 42px;
+        //     left: -15px;
+        //     font-size: 2rem;
+        //     font-family: $M;
+        //     background-color: $blue;
+        //     border: none;
+        //     z-index: 2;
+        //   }
 
-          .bg {
-            display: block;
-            width: 18.7rem;
-            height: 4.5rem;
-            background-color: $yellow;
-            opacity: 0.7;
-          }
-        }
+        //   .bg {
+        //     display: block;
+        //     width: 18.7rem;
+        //     height: 4.5rem;
+        //     background-color: $yellow;
+        //     opacity: 0.7;
+        //   }
+        // }
       }
     }
   }

@@ -41,7 +41,12 @@
       letter-spacing: 2px;
       opacity: 0.98;
     }
-
+  }
+  .btn-cont {
+    width: 100%;
+    // display: inline-block;
+    // margin: 0 auto;
+    // text-align: center;
     .btn {
       margin-left: 1.5em;
       display: inline-block;
@@ -58,6 +63,7 @@
         background-color: $blue;
         border: none;
         z-index: 2;
+        // text-align: center;
       }
 
       .bg {

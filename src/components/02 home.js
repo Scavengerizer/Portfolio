@@ -15,15 +15,19 @@ function Home() {
               Hi, I am Himanshu Goel. I am a UI/UX<br></br> Designer and a
               Front-end Developer.
             </p>
-            <div className='btn'>
-              <a>See my work</a>
-              <div className='bg'></div>
-            </div>
           </div>
           <div className='home-pic'>
             <img src={landing_image} alt='' />
           </div>
         </div>
+
+        <div className='btn-cont'>
+          <div className='btn'>
+            <a>See my work</a>
+            <div className='bg'></div>
+          </div>
+        </div>
+
         <div className='scroll-anim'></div>
       </div>
     </div>

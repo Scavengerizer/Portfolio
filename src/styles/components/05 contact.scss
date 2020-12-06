@@ -53,11 +53,12 @@
             grid-template-rows: 1fr 1fr;
             .link {
               margin-bottom: 4.5em;
+              // margin: auto;
               .row {
                 justify-content: flex-start;
                 a {
                   padding-left: 1em;
-                  margin-right: 5em;
+                  // margin-right: 5em;
                   color: $dark-grey;
                   font: 600 2rem $M;
                 }

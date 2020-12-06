@@ -19,7 +19,7 @@ function Contact() {
               <h5>Let’s get started</h5>
               <div className='links'>
                 <div className='link'>
-                  <div className='row'>
+                  <div className='row center'>
                     <img src={email} alt='' />
                     <a href='#'>Email</a>
                   </div>

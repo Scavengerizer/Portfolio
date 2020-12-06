@@ -46,7 +46,8 @@
             color: $blue;
           }
           .links {
-            min-width: 600px;
+            // min-width: 600px;
+            width: 100%;
             margin: 5em 0;
             display: grid;
             grid-template-columns: 1fr 1fr;

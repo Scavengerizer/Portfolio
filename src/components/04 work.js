@@ -66,7 +66,13 @@ function Work() {
                 <div className='col'>
                   <h3>Home Decor</h3>
                   <div className='img-prop'>
-                    <div className='img1'></div>
+                    <a
+                      href='https://home-decor-site.netlify.app/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <div className='img1'></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -75,7 +81,13 @@ function Work() {
                 <div className='col'>
                   <h3>Photopics</h3>
                   <div className='img-prop'>
-                    <div className='img3'></div>
+                    <a
+                      href='https://photopics.netlify.app/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <div className='img3'></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -103,7 +115,13 @@ function Work() {
                 <div className='col'>
                   <h3>Gaming Website</h3>
                   <div className='img-prop'>
-                    <div className='img2'></div>
+                    <a
+                      href='https://scavenger.netlify.app/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <div className='img2'></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -112,7 +130,13 @@ function Work() {
                 <div className='col'>
                   <h3>KYC Interface</h3>
                   <div className='img-prop'>
-                    <div className='img4'></div>
+                    <a
+                      href='https://www.behance.net/gallery/109248361/KYC-Dashboard-Design'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <div className='img4'></div>
+                    </a>
                   </div>
                 </div>
               </div>

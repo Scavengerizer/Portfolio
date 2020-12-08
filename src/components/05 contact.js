@@ -21,25 +21,49 @@ function Contact() {
                 <div className='link'>
                   <div className='row center'>
                     <img src={email} alt='' />
-                    <a href='#'>Email</a>
+                    <a
+                      href='mailto:himanshugoel523@gmail.com'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Email
+                    </a>
                   </div>
                 </div>
                 <div className='link'>
                   <div className='row'>
                     <img src={behance} alt='' />
-                    <a href='#'>Behance</a>
+                    <a
+                      href='https://www.behance.net/himanshugoel1'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Behance
+                    </a>
                   </div>
                 </div>
                 <div className='link'>
                   <div className='row'>
                     <img src={linkedin} alt='' />
-                    <a href='#'>Linkedin</a>
+                    <a
+                      href='https://www.linkedin.com/in/himanshu-goel-b239681b4/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Linkedin
+                    </a>
                   </div>
                 </div>
                 <div className='link'>
                   <div className='row'>
                     <img src={github} alt='' />
-                    <a href='#'>Github</a>
+                    <a
+                      href='https://github.com/Scavengerizer'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Github
+                    </a>
                   </div>
                 </div>
               </div>

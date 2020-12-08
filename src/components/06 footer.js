@@ -22,10 +22,34 @@ function Footer() {
         </div>
         <div className='footer_pics'>
           <div className='row'>
-            <img src={email} alt='' />
-            <img src={behance} alt='' />
-            <img src={linkedin} alt='' />
-            <img src={github} alt='' />
+            <a
+              href='mailto:himanshugoel523@gmail.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={email} alt='' />
+            </a>
+            <a
+              href='https://www.behance.net/himanshugoel1'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={behance} alt='' />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/himanshu-goel-b239681b4/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={linkedin} alt='' />
+            </a>
+            <a
+              href='https://github.com/Scavengerizer'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={github} alt='' />
+            </a>
           </div>
         </div>
         <div className='footer_copyright'>

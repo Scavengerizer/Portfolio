@@ -1,6 +1,6 @@
 import React from "react";
 import landing_image from "../assets/svg/limage.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -23,7 +23,9 @@ function Home() {
 
         <div className='btn-cont'>
           <div className='btn'>
-            <a>See my work</a>
+            <Link className='seework' to='/work'>
+              See my work
+            </Link>
             <div className='bg'></div>
           </div>
         </div>

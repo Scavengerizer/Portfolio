@@ -73,7 +73,7 @@ header {
             margin: 0;
             list-style: none;
             li {
-              h1 {
+              .menu-list-item {
                 display: inline-block;
                 position: relative;
                 font-size: 8rem;
@@ -87,7 +87,7 @@ header {
                 margin-bottom: 0.4em;
                 transition: 0.4s;
               }
-              h1:hover {
+              .menu-list-item:hover {
                 transition: 0.4s;
                 color: $yellow;
                 -webkit-text-stroke-width: 1.2px;

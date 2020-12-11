@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/01 header";
 import Home from "./components/02 home";
 import About from "./components/03 about";
@@ -9,6 +9,7 @@ import Contact from "./components/05 contact";
 import Footer from "./components/06 footer";
 
 import "./styles/app.scss";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -56,12 +57,40 @@ function App() {
 
   return (
     <div className='app'>
-      <Header />
+      {/* <Header />
       <Home />
       <About />
       <Work />
       <Contact />
-      <Footer />
+      <Footer /> */}
+      <Router>
+        <Header />
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+            <About />
+            <Work />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route path='/about' exact>
+            <About />
+            <Work />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route path='/work' exact>
+            <Work />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route path='/contact' exact>
+            <Contact />
+            <Footer />
+          </Route>
+        </Switch>
+        <ScrollToTop />
+      </Router>
     </div>
   );
 }

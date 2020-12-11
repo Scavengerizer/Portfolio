@@ -3,21 +3,26 @@ import email from "../assets/svg/email.svg";
 import behance from "../assets/svg/behance.svg";
 import linkedin from "../assets/svg/linkedin.svg";
 import github from "../assets/svg/github.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
       <div className='col v-center'>
-        {/* <div className='footer_logo'>
-          <span>Photography</span>
-        </div> */}
         <div className='footer_links'>
           <div className='row'>
-            <a href='#'>Home</a>
-            <a href='#'>About</a>
-            <a href='#'>Work</a>
-            <a href='#'>Contact</a>
+            <Link to='/' className='link'>
+              Home
+            </Link>
+            <Link to='/about' className='link'>
+              About
+            </Link>
+            <Link to='/work' className='link'>
+              Work
+            </Link>
+            <Link to='/contact' className='link'>
+              Contact
+            </Link>
           </div>
         </div>
         <div className='footer_pics'>

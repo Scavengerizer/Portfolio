@@ -9,13 +9,13 @@ footer {
     .footer_links {
       margin-top: 2em;
       margin-left: 3em;
-      a {
+      .link {
         padding: 0 2em;
         color: $white;
         font: 700 1.5rem $M;
         transition: 0.6s;
       }
-      a:hover {
+      .link:hover {
         color: $blue;
         transition: 0.6s;
       }

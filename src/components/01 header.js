@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import gsap from "gsap";
 
 function Header() {
@@ -6,6 +8,12 @@ function Header() {
     initial: false,
     clicked: null,
   });
+
+  const handleMenuClose = () => {
+    setState({
+      clicked: !state.clicked,
+    });
+  };
 
   const handleMenu = () => {
     if (state.initial === false) {
@@ -110,7 +118,7 @@ function Header() {
         .from(".menu-list-item", {
           y: 60,
           delay: -0.4,
-          duration: 0.8,
+          duration: 0.5,
           opacity: 0,
           ease: "power1.inOut",
           stagger: {
@@ -143,37 +151,49 @@ function Header() {
               <div className='menu-links'>
                 <nav>
                   <ul>
-                    <li className='menu-list-item'>
-                      <h1
+                    <li>
+                      <Link
+                        to='/'
+                        className='menu-list-item'
+                        onClick={handleMenuClose}
                         onMouseEnter={(e) => hover1(e)}
                         onMouseLeave={(e) => hover2(e)}
                       >
                         Home
-                      </h1>
+                      </Link>
                     </li>
-                    <li className='menu-list-item'>
-                      <h1
+                    <li>
+                      <Link
+                        to='/about'
+                        className='menu-list-item'
+                        onClick={handleMenuClose}
                         onMouseEnter={(e) => hover1(e)}
                         onMouseLeave={(e) => hover2(e)}
                       >
                         About Me
-                      </h1>
+                      </Link>
                     </li>
-                    <li className='menu-list-item'>
-                      <h1
+                    <li>
+                      <Link
+                        to='/work'
+                        className='menu-list-item'
+                        onClick={handleMenuClose}
                         onMouseEnter={(e) => hover1(e)}
                         onMouseLeave={(e) => hover2(e)}
                       >
                         My Work
-                      </h1>
+                      </Link>
                     </li>
-                    <li className='menu-list-item'>
-                      <h1
+                    <li>
+                      <Link
+                        to='/contact'
+                        className='menu-list-item'
+                        onClick={handleMenuClose}
                         onMouseEnter={(e) => hover1(e)}
                         onMouseLeave={(e) => hover2(e)}
                       >
                         Contact Me
-                      </h1>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
